@@ -1,0 +1,104 @@
+ /* Reset some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Apply styles to the navigation bar */
+    body {
+        font-family: Arial, sans-serif;
+        /* background-color: #f0f0f0; */
+        background: #7dc6f0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #bde5f8, #88daee);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b9b0e6, #73c2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    header {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+    }
+
+    .nav-links li:last-child {
+        margin-right: 0;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: #555;
+    }
+
+    /* Style the main content */
+    main {
+        padding: 20px;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .weather-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+
+    /* Style the footer */
+    footer {
+        background-color: #333;
+        color: #fff;
+        width: 100%;
+        margin-top:120px;
+        bottom: 0;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .nav-links {
+            margin-top: 10px;
+        }
+    }
